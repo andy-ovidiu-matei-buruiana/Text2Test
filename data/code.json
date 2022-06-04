@@ -1,0 +1,15 @@
+{
+    "imports" : "import pytest\nimport time\nimport json\nfrom selenium import webdriver\nfrom selenium.webdriver.common.by import By\nfrom selenium.webdriver.common.action_chains import ActionChains\nfrom selenium.webdriver.support import expected_conditions\nfrom selenium.webdriver.support.wait import WebDriverWait\nfrom selenium.webdriver.common.keys import Keys\nfrom selenium.webdriver.common.desired_capabilities import DesiredCapabilities\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.common.by import By\nfrom selenium.webdriver.support import expected_conditions as EC\nfrom selenium.webdriver.chrome.service import Service\n",
+    "chrome" : "from webdriver_manager.chrome import ChromeDriverManager",
+    "firefox" : "from webdriver_manager.firefox import GeckoDriverManager",
+    "start" : "\nclass TestTest():\n\n  def setup_method(self, method):\n    self.driver = inputDriverHere\n    self.vars = {}\n\n  def teardown_method(self, method):\n    self.driver.quit()\n\n  def test_test(self):",
+    "end" : "    self.driver.close()",
+    "WEBSITE" : "    self.driver.get(var_replace)",
+    "CLICK" : "    self.driver.find_element(By.ID, var_replace).click()",
+    "TYPE" : "    self.driver.find_element(By.ID, var_replace).send_keys(var_replace)",
+    "TITLE" : "    title = self.driver.title\n    assert title == var_replace",
+    "SCREENSHOT" : "    self.driver.save_screenshot(var_replace)",
+    "ERROR" : "    assert WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.ID, var_replace))).get_attribute(\"innerHTML\") == var_replace"
+}
+
+

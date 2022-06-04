@@ -1,0 +1,5 @@
+{
+    "browser": "chrome",
+    "chromeDriver" : "webdriver.Chrome(service=Service(ChromeDriverManager().install()))",
+    "firefoxDriver" : "webdriver.Firefox(service=Service(GeckoDriverManager().install()))"
+}
