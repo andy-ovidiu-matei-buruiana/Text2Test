@@ -5,6 +5,8 @@ Testing Framework that implements BDD through Gherkin syntax and makes use of pr
 
 Download locally the git repository.
 
+Install the prerequisites in the "requirements.txt" file.
+
 Run commands:
 1. Function runtext2test {python "path\to\controller.py" $args}
 2. Set-Alias -Name text2test -Value runtext2test
@@ -54,6 +56,8 @@ Cadre de test qui implémente BDD via la syntaxe Gherkin et utilise des mots cl�
 ## Installation
 
 Téléchargez localement le référentiel git.
+
+Installez les prérequis dans le fichier "requirements.txt".
 
 Exécutez les commandes:
 1. Function runtext2test {python "path\to\controller.py" $args}
