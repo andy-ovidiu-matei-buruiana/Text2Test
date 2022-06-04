@@ -13,14 +13,13 @@ Run commands:
 
 Create feature files inside the "features" folder.
 
-Example:
+### Example:
 - Feature: run a login test case with background
 
     - Background:
         - Given we open WEBSITE 'https://www.amazon.com/'
 
     - Scenario: login
-        - Given we open WEBSITE 'https://www.clientam.com/sso/Login'
         - When we CLICK 'user_name'
         - And we TYPE 'user_name' 'uname'
         - And we CLICK 'password'
@@ -28,9 +27,9 @@ Example:
         - And we CLICK 'submitForm'
         - Then an ERROR 'ERRORMSG' 'Invalid username password combination' will be raised
 
-Keywords have corresponding Selenium code inside the 'code.json' file.
+#### Keywords have corresponding Selenium code inside the 'code.json' file.
 
-Keywords usage:
+### Keywords usage:
  - WEBSITE + 'link': opens the link
  - CLICK + 'id': clicks on the specified element 
  - TYPE + 'id' + 'text': types test into the specified element
@@ -38,9 +37,9 @@ Keywords usage:
  - SCREENSHOT + 'name': takes screenshot and saves it as name
  - ERROR + 'id' + 'text':  verifies the error with id is equal to text
 
-Feel free to update the 'code.json' file to add keywords for your specific needs.
+#### Feel free to update the 'code.json' file to add keywords for your specific needs.
 
-Run text2test with parameters:
+### Run text2test with parameters:
  - Syntax: text2test [-t|all|run|h] [--help]
  - options:
  - h:     Print this Help.
@@ -64,14 +63,13 @@ Exécutez les commandes:
 
 Créez des fichiers de fonctionnalités dans le dossier "features".
 
-Exemple:
+### Exemple:
 - Fonctionnalité: exécutez un cas de test de connexion avec un arrière-plan
 
     - Arrière plan:
         - Étant donné que nous ouvrons le SITE WEB 'https://www.amazon.com/'
 
     - Scénario : connexion
-        - Étant donné que nous ouvrons le SITE 'https://www.clientam.com/sso/Login'
         - Lorsque nous CLIQUEZ sur 'user_name'
         - Et on TAPE 'user_name' 'uname'
         - Et on CLIQUE sur 'mot de passe'
@@ -79,9 +77,9 @@ Exemple:
         - Et nous CLIQUEZ sur 'submitForm'
         - Ensuite, une ERREUR 'ERRORMSG' 'Combinaison de mot de passe de nom d'utilisateur invalide' sera générée
 
-Les mots-clés ont le code Selenium correspondant dans le fichier 'code.json'.
+#### Les mots-clés ont le code Selenium correspondant dans le fichier 'code.json'.
 
-Utilisation des mots-clés :
+### Utilisation des mots-clés :
  - WEBSITE + 'lien' : ouvre le lien
  - CLICK + 'id' : clique sur l'élément spécifié
  - TYPE + 'id' + 'text' : les types testent dans l'élément spécifié
@@ -89,9 +87,9 @@ Utilisation des mots-clés :
  - SCREENSHOT + 'nom' : prend une capture d'écran et l'enregistre sous le nom
  - ERROR + 'id' + 'text' : vérifie l'erreur avec id est égal à text
 
-N'hésitez pas à mettre à jour le fichier 'code.json' pour ajouter des mots-clés adaptés à vos besoins spécifiques.
+#### N'hésitez pas à mettre à jour le fichier 'code.json' pour ajouter des mots-clés adaptés à vos besoins spécifiques.
 
-Exécutez text2test avec les paramètres :
+### Exécutez text2test avec les paramètres :
  - Syntaxe : text2test [-t|all|run|h] [--help]
  - option :
  - h : imprimez cette aide.
