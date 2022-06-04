@@ -31,12 +31,12 @@ Example:
 Keywords have corresponding Selenium code inside the 'code.json' file.
 
 Keywords usage:
-    - WEBSITE + 'link': opens the link
-    - CLICK + 'id': clicks on the specified element 
-    - TYPE + 'id' + 'text': types test into the specified element
-    - TITLE + 'text': verifies title is equal to text
-    - SCREENSHOT + 'name': takes screenshot and saves it as name
-    - ERROR + 'id' + 'text':  verifies the error with id is equal to text
+ - WEBSITE + 'link': opens the link
+ - CLICK + 'id': clicks on the specified element 
+ - TYPE + 'id' + 'text': types test into the specified element
+ - TITLE + 'text': verifies title is equal to text
+ - SCREENSHOT + 'name': takes screenshot and saves it as name
+ - ERROR + 'id' + 'text':  verifies the error with id is equal to text
 
 Feel free to update the 'code.json' file to add keywords for your specific needs.
 
@@ -82,12 +82,12 @@ Exemple:
 Les mots-clés ont le code Selenium correspondant dans le fichier 'code.json'.
 
 Utilisation des mots-clés :
-    - WEBSITE + 'lien' : ouvre le lien
-    - CLICK + 'id' : clique sur l'élément spécifié
-    - TYPE + 'id' + 'text' : les types testent dans l'élément spécifié
-    - TITLE + 'texte' : vérifie que le titre est égal au texte
-    - SCREENSHOT + 'nom' : prend une capture d'écran et l'enregistre sous le nom
-    - ERROR + 'id' + 'text' : vérifie l'erreur avec id est égal à text
+ - WEBSITE + 'lien' : ouvre le lien
+ - CLICK + 'id' : clique sur l'élément spécifié
+ - TYPE + 'id' + 'text' : les types testent dans l'élément spécifié
+ - TITLE + 'texte' : vérifie que le titre est égal au texte
+ - SCREENSHOT + 'nom' : prend une capture d'écran et l'enregistre sous le nom
+ - ERROR + 'id' + 'text' : vérifie l'erreur avec id est égal à text
 
 N'hésitez pas à mettre à jour le fichier 'code.json' pour ajouter des mots-clés adaptés à vos besoins spécifiques.
 
