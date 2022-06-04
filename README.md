@@ -64,18 +64,18 @@ Exécutez les commandes:
 Créez des fichiers de fonctionnalités dans le dossier "features".
 
 ### Exemple:
-- Fonctionnalité: exécutez un cas de test de connexion avec un arrière-plan
+- Feature: run a login test case with background
 
-    - Arrière plan:
-        - Étant donné que nous ouvrons le SITE WEB 'https://www.amazon.com/'
+    - Background:
+        - Given we open WEBSITE 'https://www.amazon.com/'
 
-    - Scénario : connexion
-        - Lorsque nous CLIQUEZ sur 'user_name'
-        - Et on TAPE 'user_name' 'uname'
-        - Et on CLIQUE sur 'mot de passe'
-        - Et on TAPE 'password' 'pass'
-        - Et nous CLIQUEZ sur 'submitForm'
-        - Ensuite, une ERREUR 'ERRORMSG' 'Combinaison de mot de passe de nom d'utilisateur invalide' sera générée
+    - Scenario: login
+        - When we CLICK 'user_name'
+        - And we TYPE 'user_name' 'uname'
+        - And we CLICK 'password'
+        - And we TYPE 'password' 'pass'
+        - And we CLICK 'submitForm'
+        - Then an ERROR 'ERRORMSG' 'Invalid username password combination' will be raised
 
 #### Les mots-clés ont le code Selenium correspondant dans le fichier 'code.json'.
 
